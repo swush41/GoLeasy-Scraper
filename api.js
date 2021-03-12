@@ -10,7 +10,7 @@ const timer = ms => new Promise(res => setTimeout(res, ms))
 async function getData (){
     var t0 = performance.now()
     // Clear all the data from sheet
-    const spreadsheetId = '1Awyak298CPEVtC-EnHBYvPgy54lqxWSMOgAXY9SXKXQ'
+    const spreadsheetId = 'xxx'
 	const doc = new GoogleSpreadsheet(spreadsheetId); // set spreadsheet id
 	await doc.useServiceAccountAuth(credentials);
 	await doc.loadInfo();
