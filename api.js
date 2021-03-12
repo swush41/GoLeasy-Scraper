@@ -24,7 +24,7 @@ for (var number = 1 ; number < 1360 ; number += 50){
     for (var page = number; page< max ; page++){
         await timer(3000)
         const data = []
-        const limitUrl = `https://www.goleasy.de/api/inserate?sort=bester-leasingfaktor&preisanzeige=netto&page=${page}&limit=10000`
+        const limitUrl = `xxxx`
         const response = await axios({
             method: 'get',
             url: limitUrl,
@@ -47,7 +47,7 @@ for (var number = 1 ; number < 1360 ; number += 50){
 }
 
 async function WriteData(meta) {
-	const spreadsheetId = '1Awyak298CPEVtC-EnHBYvPgy54lqxWSMOgAXY9SXKXQ'
+	const spreadsheetId = 'xxx'
 	const doc = new GoogleSpreadsheet(spreadsheetId); // set spreadsheet id
 	await doc.useServiceAccountAuth(credentials);
 	await doc.loadInfo();
